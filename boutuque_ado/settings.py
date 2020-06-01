@@ -25,7 +25,7 @@ SECRET_KEY = 'jm2f50ku#xr6x#%&8w#68&kw8hvul9jhfxc@18r8bhtflns13!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-d63796dd-1496-4715-a20a-b06c164d9cb4.ws-eu01.gitpod.io']
+ALLOWED_HOSTS = ['localhost','8000-d63796dd-1496-4715-a20a-b06c164d9cb4.ws-eu01.gitpod.io']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'home'
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,10 @@ ROOT_URLCONF = 'boutuque_ado.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
