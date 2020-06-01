@@ -5,7 +5,7 @@ import sys
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'boutuque_ado.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'boutique_ado.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
