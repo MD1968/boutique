@@ -1,7 +1,6 @@
-# Code Institute
+### Silverheath Boutique
 
-Welcome Chris Z.,
+This is my first e-commerce project.
 
-We have preinstalled all of the tools you need to get started.
+Code adapted and created during my Full Stack Developers Diploma course with the Code Insitute.
 
-Happy coding!
